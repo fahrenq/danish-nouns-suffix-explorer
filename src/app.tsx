@@ -52,7 +52,7 @@ const Koen = ({ commonEnding }: { commonEnding: CommonEnding }): VNode => {
         <div class="inline-block h-full bg-green-400" style={{ width: `${enPercentage}%` }} />
         <div class="inline-block h-full bg-blue-400" style={{ width: `${etPercentage}%` }} />
       </div>
-      <div class="text-blue-800">en</div>
+      <div class="text-blue-800">et</div>
     </div>
     <div class="flex text-sm">
       <div class="flex-1 text-green-800">
