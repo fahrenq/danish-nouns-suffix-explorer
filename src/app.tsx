@@ -148,7 +148,7 @@ export function App (): VNode {
 
   return (
     <>
-      <div class="w-full max-w-3xl border border-black">
+      <div class="w-full border border-black bg-white">
         <div class="flex gap-2 bg-amber-200 p-2">
           <div class="flex-1">
             <div>Last letters count</div>
@@ -222,7 +222,7 @@ export function App (): VNode {
           <div class="basis-1/6">Word count</div>
           <div class="basis-3/6">Køn</div>
         </div>
-        <div class="overflow-auto max-h-[48rem]">
+        <div class="overflow-auto max-h-[500px]">
           {commonEndings.map(commonEnding => <Row commonEnding={commonEnding} key={commonEnding.lastLetters} isExpanded={expandedEndings.includes(commonEnding.lastLetters)} onExpand={
             () => {
               if (expandedEndings.includes(commonEnding.lastLetters)) {
@@ -234,9 +234,6 @@ export function App (): VNode {
           } />)}
         </div>
       </div>
-      {/* <pre>
-        { JSON.stringify(commonEndings, null, 4)}
-      </pre> */}
     </>
   )
 }
